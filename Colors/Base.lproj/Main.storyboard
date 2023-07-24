@@ -16,24 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3G-Yn-gCF">
-                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="tempButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZK-UJ-OHl"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="naD-bL-llN">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="aRD-pO-3Ce">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aRD-pO-3Ce" id="48T-pJ-6Ue">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="t3G-Yn-gCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTN-ZY-n5b"/>
-                            <constraint firstItem="t3G-Yn-gCF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ygi-n3-7kc"/>
+                            <constraint firstAttribute="bottom" secondItem="naD-bL-llN" secondAttribute="bottom" id="V4H-En-Y3X"/>
+                            <constraint firstItem="naD-bL-llN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VR9-RY-Y8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="naD-bL-llN" secondAttribute="trailing" id="guU-0V-dUL"/>
+                            <constraint firstItem="naD-bL-llN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mB3-AY-6UL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="xN0-3C-gFZ"/>
                     <connections>
+                        <outlet property="tableView" destination="naD-bL-llN" id="k7S-nC-dZ8"/>
                         <segue destination="si2-eN-mjq" kind="show" identifier="ToColorsDetailVC" id="i6z-2b-uSq"/>
                     </connections>
                 </viewController>

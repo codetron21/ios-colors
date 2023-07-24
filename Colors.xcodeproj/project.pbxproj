@@ -14,6 +14,7 @@
 		24A73DEF2A6DC6E0006857F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A73DED2A6DC6E0006857F0 /* LaunchScreen.storyboard */; };
 		24A73DF72A6DC8FD006857F0 /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A73DF62A6DC8FD006857F0 /* ColorsTableVC.swift */; };
 		24A73DF92A6DC96F006857F0 /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A73DF82A6DC96F006857F0 /* ColorsDetailVC.swift */; };
+		24A73DFB2A6F1FAD006857F0 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A73DFA2A6F1FAD006857F0 /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		24A73DF02A6DC6E0006857F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A73DF62A6DC8FD006857F0 /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
 		24A73DF82A6DC96F006857F0 /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
+		24A73DFA2A6F1FAD006857F0 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				24A73DF02A6DC6E0006857F0 /* Info.plist */,
 				24A73DF62A6DC8FD006857F0 /* ColorsTableVC.swift */,
 				24A73DF82A6DC96F006857F0 /* ColorsDetailVC.swift */,
+				24A73DFA2A6F1FAD006857F0 /* UIColor+Ext.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				24A73DF72A6DC8FD006857F0 /* ColorsTableVC.swift in Sources */,
 				24A73DF92A6DC96F006857F0 /* ColorsDetailVC.swift in Sources */,
+				24A73DFB2A6F1FAD006857F0 /* UIColor+Ext.swift in Sources */,
 				24A73DE32A6DC6DE006857F0 /* AppDelegate.swift in Sources */,
 				24A73DE52A6DC6DE006857F0 /* SceneDelegate.swift in Sources */,
 			);
